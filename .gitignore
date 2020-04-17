@@ -1,2 +1,5 @@
 .vscode
 tutorial
+
+# 확장자 .exe 파일 무시
+*.exe
