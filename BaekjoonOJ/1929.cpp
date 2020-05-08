@@ -19,7 +19,7 @@ int main()
     cin.tie(NULL);
 
     check[0] = check[1] = true;
-    for (int i = 2; i * i <= MAX; i++)
+    for (int i = 2; i <= MAX; i++)
     {
         if (check[i] == false)
         {

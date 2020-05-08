@@ -2,6 +2,10 @@
  * @file 6588.cpp
  * @brief 골드바흐의 추측
  * @author Sam Kim (samkim2626@gmail.com)
+ * 
+ * 에라토스테네스의 체
+ * 
+ * 17105 - 골드바흐 트리플 풀어볼 것
  */
 
 #include <iostream>
@@ -18,6 +22,7 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
+    // 소수 구하기
     for (int i = 2; i <= MAX; i++)
     {
         if (check[i] == false)
@@ -29,6 +34,8 @@ int main()
             }
         }
     }
+
+    bool isGoldbachTrue = false;
     while (true)
     {
         int n;
@@ -42,9 +49,15 @@ int main()
             if (check[n - prime[i]] == false)
             {
                 cout << n << " = " << prime[i] << " + " << n - prime[i] << '\n';
+                isGoldbachTrue = true;
                 break;
             }
         }
+    }
+
+    if (!isGoldbachTrue)
+    {
+        cout << "Goldbach's conjecture is wrong." << '\n';
     }
 
     return 0;
