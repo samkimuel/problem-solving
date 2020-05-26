@@ -4,6 +4,7 @@
  * @author Sam Kim (samkim2626@gmail.com)
  * 
  * 자료형 주의!!! 겁나 주의
+ * map으로 밖에 풀지 못하는 것인가..? -> 다른 풀이도 생각해보자
  */
 
 #include <iostream>
