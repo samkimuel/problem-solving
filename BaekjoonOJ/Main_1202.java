@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
 /**
  * 일이공이 보석 도둑
  */
-public class 일이공이 {
+public class Main_1202 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
